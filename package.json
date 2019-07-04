@@ -1,0 +1,15 @@
+{
+  "name": "grid-ipfs-plugin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "publish": "npm pack && ethpkg sign --publish true",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^1.17.1"
+  }
+}
