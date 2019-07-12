@@ -20,11 +20,7 @@ module.exports = {
   beforeStart: {
     execute: [['init']]
   },
-  filter: {
-    name: {
-        includes: [osFilter]
-    }
-  },
+  prefix: osFilter,
   settings: [
     {
       id: 'daemon',
