@@ -1,4 +1,14 @@
-const platform = process.platform === 'win32' ? 'windows' : process.platform;
+let osFilter
+switch (process.platform) {
+    case 'win32': 
+        osFilter = 'windows'
+        break
+    case 'darwin': 
+        osFilter = 'darwin-amd64'
+        break
+    default:
+        osFilter = process.platfrorm;
+}
 
 module.exports = {
   type: 'storage',
@@ -10,6 +20,7 @@ module.exports = {
   beforeStart: {
     execute: [['init']]
   },
+  prefix: osFilter,
   settings: [
     {
       id: 'daemon',
