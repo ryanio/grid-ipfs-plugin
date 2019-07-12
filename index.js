@@ -13,8 +13,8 @@ switch (process.platform) {
 module.exports = {
   type: 'storage',
   order: 3,
-  displayName: 'IPFS-local',
-  name: 'ipfslocal',
+  displayName: 'IPFS',
+  name: 'ipfs',
   repository: 'https://github.com/ipfs/go-ipfs',
   binaryName: process.platform === 'win32' ? 'ipfs.exe' : 'ipfs',
   beforeStart: {
