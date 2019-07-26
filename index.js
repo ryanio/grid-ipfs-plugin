@@ -1,13 +1,13 @@
-let osFilter
+let osFilter;
 switch (process.platform) {
-    case 'win32': 
-        osFilter = 'windows'
-        break
-    case 'darwin': 
-        osFilter = 'darwin-amd64'
-        break
-    default:
-        osFilter = process.platfrorm;
+  case 'win32':
+    osFilter = 'windows';
+    break;
+  case 'darwin':
+    osFilter = 'darwin-amd64';
+    break;
+  default:
+    osFilter = process.platfrorm;
 }
 
 module.exports = {
@@ -21,6 +21,11 @@ module.exports = {
     execute: [['init']]
   },
   prefix: osFilter,
+  filter: {
+    name: {
+      excludes: ['rc']
+    }
+  },
   settings: [
     {
       id: 'daemon',
