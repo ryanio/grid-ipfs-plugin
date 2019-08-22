@@ -1,8 +1,8 @@
 # Grid IPFS Plugin
 
-This is the example IPFS integration for Grid.
+This is an IPFS plugin integration for Grid.
 
-If you want to use this plugin in Grid you can add it to `plugins.json` like this:
+If you want to use this plugin in Grid, you can add it to `plugins.json` like this:
 
 ```
 {
