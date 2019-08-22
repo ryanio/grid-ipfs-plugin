@@ -36,5 +36,33 @@ module.exports = {
         { value: 'disabled', label: 'Disabled', flag: '' }
       ]
     }
-  ]
+  ],
+  about: {
+    description:
+      'IPFS is a protocol and network designed to create a content-addressable, peer-to-peer method of storing and sharing hypermedia in a distributed file system.',
+    apps: [
+      {
+        name: 'IPFS Web UI',
+        url: 'http://127.0.0.1:5001/webui'
+      }
+    ],
+    links: [
+      {
+        name: 'GitHub Repository',
+        url: 'https://github.com/ipfs/ipfs'
+      }
+    ],
+    docs: [
+      {
+        name: 'IPFS Docs',
+        url: 'https://docs.ipfs.io/'
+      }
+    ],
+    community: [
+      {
+        name: 'IPFS Forum',
+        url: 'https://discuss.ipfs.io/'
+      }
+    ]
+  }
 };
